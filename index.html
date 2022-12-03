@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Vix Portfolio</title>
+</head>
+<body class="bg-black">
+    <!-- main offcanvas begins -->
+    
+        
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header ">
+
+    <!-- 'X' in the offcanvas  -->
+            <button type="button" id="btn-close" class="btn-close fs-3 bg-light border border-danger rounded-circle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+
+    <!-- list having home, about, portfolio and contact begins -->
+        <div id="offcanvas-body" class="offcanvas-body">
+
+            <ul id="canvas-content" class="d-block px-3">
+
+                <li class="my-5 " id="cont-home" data-bs-dismiss="offcanvas" >
+                    <a href="#home"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">HOME</div> </a>
+                </li>
+                <hr class="text-white mx-5">
+                <li class="my-5 " id="about" data-bs-dismiss="offcanvas"> 
+                    <a href="#first-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">ABOUT</div> </a>
+                </li>
+                <hr class="text-white mx-5">
+                <li class="my-5 " id="portfolio" data-bs-dismiss="offcanvas">                             
+                    <a href="#second-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">PROJECTS</div> </a>
+                </li>
+            </ul>
+        
+        </div>
+        
+        <div id="offcanvas-footer" class="offcanvas-footer">
+        
+            <ul id="main-offcanvas-links" >
+                <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
+                <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
+                <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
+                <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+<!-- main offcanvas ends -->
+
+
+<!-- contact link offcanvas begins -->
+
+    <div class="offcanvas offcanvas-end shadow-lg" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="contactoffcanvas" aria-labelledby="contactoffcanvasLabel">
+        <div class="offcanvas-header">
+
+            <!-- 'X' in the offcanvas  -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="contact-offcanvas-body" class="contact-offcanvas-body my-auto">
+            <ul>
+                <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
+                <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
+                <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+<!-- contact link offcanvas ends -->
+
+
+
+<div class="p-0 m-0 container-fluid">
+    
+    <header class="container-fluid position-fixed">
+
+        <div id="nav" class="container rounded-pill align-text-center mt-2  border border-2 border-white text-white ">
+           
+            <div id="logo-div">
+                <a id="logo-link" class="text-white" href="#">
+                    <div id="logo" class="my-2 bg-black border border-5">
+                    
+                        <img id="image" src="./images/vix.png" alt="">
+                    
+                    </div>
+                </a>
+            </div>
+
+            <div id="links" class="my-auto ms-auto me-0 ">
+                <ul class="mb-0 py-2">
+                    <li id="about" class="d-inline mx-3 ">
+                        <a class="text-light text-decoration-none border-0 " href="#first-hr">About</a>
+                    </li>
+                    <li id="portfolio" class="d-inline mx-3 ">
+                        <a class="text-light text-decoration-none border-0 " href="#second-hr">Projects</a>
+                    </li>
+                    <li id="contact" class="d-inline mx-3"
+                        data-bs-toggle="offcanvas" data-bs-backdrop="false" data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
+                        <a class="text-light text-decoration-none border-0">Contact</a>                             
+                    </li>
+                </ul>
+            </div>
+
+            <div id="drop" class="my-auto ms-auto mb=0 ">
+                <ul class="mb-0" >
+
+        
+                    <li id="hamburger" class="d-inline ">
+                        <img data-bs-toggle="offcanvas"  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" src="./images/list.svg" alt="list">
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    
+
+
+    <main class="container">
+
+        <!-- home  -->
+        <div id="home" class="container">
+            <div id="writeup-et-pf">
+
+                <div id="writeup">
+                    <h1>
+                        Hello,  <span></span>
+                    </h1>
+                    <h1>
+                        MY NAME IS  <span></span>
+                    </h1>
+                    <h1>
+                        Ofor Uchenna <span></span>
+                    </h1>
+                </div>
+                <a class="ms-auto" href="#">
+                    <button id="btn" class="btn btn-outline-danger text-center"> PORTFOLIO </button>
+                </a>
+            </div>
+        </div>
+
+            <hr id="first-hr" class="text-white">
+
+
+
+
+
+
+        <!-- about -->
+        <div id="page-about" class=" mt-5">
+            
+            <div id="about-row" class="align-text-center">
+                <div id="about-col1" class="bg-black">
+                    <img id="me" class="img-fluid" src="./images/me.jpg" alt="">
+                </div>
+                <div id="about-col2" class="">
+                    <p class="text-white">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum adipisci, voluptates maxime ab sapiente recusandae ut necessitatibus minus quaerat eius hic architecto distinctio in corporis fuga tenetur nisi deserunt, nostrum quae ipsum commodi dicta! Earum dicta, libero quia aperiam sapiente eligendi reprehenderit tempore, consequatur temporibus incidunt officia labore cupiditate. Quo voluptatem vitae suscipit nulla voluptatibus blanditiis! Maiores impedit totam quibusdam quos asperiores ex accusantium, expedita reprehenderit quae nostrum modi dolores reiciendis corrupti, nihil sed dolorum alias fugit! Ipsum hic illum iure quos ex, accusantium ipsa voluptatem ducimus enim aliquid repudiandae, expedita provident aspernatur modi perferendis reprehenderit architecto alias reiciendis itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint quam aut neque ut, fugiat accusantium, nihil ipsa minus harum culpa et hic repellat nemo molestias officiis blanditiis error earum itaque! Amet molestiae praesentium esse, dolorum cumque similique, deserunt vel autem dolor quaerat repellat fuga commodi ipsum aspernatur ad suscipit exercitationem quidem porro est aut quisquam ratione at modi. Impedit, perferendis! Consectetur modi eius, perspiciatis fugit deleniti nihil iure architecto delectus voluptate ea non ut voluptas, corrupti voluptatibus at saepe facere qui assumenda dolorum alias cumque. Praesentium neque laborum unde.
+                    </p>                   
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <hr id="second-hr" class="text-white">
+
+
+
+
+
+        <!-- projects -->
+        <div id="my-projects">
+
+        </div>
+
+    </main>
+  
+
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</html>
