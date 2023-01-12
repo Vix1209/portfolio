@@ -265,63 +265,31 @@ main{
 #my-projects{
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: auto;
     overflow-y: hidden;
 }
 
+#my-projects .row{
+    margin-top: 185px;
+}
 
+#my-projects .card{
+    padding: 10px;
+    margin:30px;
+}
 
-
-
-@media (max-width: 1402px){
-    /* about */
-
-    #page-about{
-        width: 100%;
-        position: relative;
-        height: 100vh;
-        overflow-y: hidden;
-        
-    }
-    
-    #about-row{
-        width: 100%;
-        position: absolute;
-        margin-top: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        display: block;
-        height: auto;
-    }
-    
-    #about-col1{
-       background-size: auto;
-       width: 100%;
-    }
-    
-    #me{
-        max-width:250px;
-        background-size: cover;
-        height: auto;
-        border-radius: 26px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    #about-col2{
-        width: 100%;
-    }
-
-    #about-col2 p{
-        text-align: justify;
-    }
+#my-projects .card:hover{
+    transform:scale(1.08);
+    transition: 0.5s ease-in-out;
 }
 
 
 
 
-@media (max-width:767px){
+
+
+
+@media (max-width:993px){
     body{
         /* background-image: linear-gradient(rgba(0,0,0,0.90),rgba(0,0,0,0.90)), url(./images/pexels-markus-spiske-330771.jpg); */
         background-repeat: no-repeat;
@@ -445,12 +413,22 @@ main{
        transform: translateY(0);
     }
 
+    #my-projects{
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin: 0;
+        overflow-y: hidden;
+    }
+
+    
+
     /* main offcanvas */
    
     #offcanvas-footer{
 
         position: relative;
-        background-color: rgb(219, 51, 68, 0.2);
+        background-color: rgb(94, 13, 21);
         margin-top: auto;
     }
 
@@ -507,3 +485,51 @@ main{
         
     }
 } 
+
+
+
+
+@media (max-width: 1402px){
+    /* about */
+
+    #page-about{
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        overflow-y: hidden;
+        
+    }
+    
+    #about-row{
+        width: 100%;
+        position: absolute;
+        margin-top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+    
+    #about-col1{
+       background-size: auto;
+       width: 100%;
+    }
+    
+    #me{
+        max-width:250px;
+        background-size: cover;
+        height: auto;
+        border-radius: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #about-col2{
+        width: 100%;
+    }
+
+    #about-col2 p{
+        text-align: justify;
+    }
+}
