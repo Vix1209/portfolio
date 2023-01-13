@@ -9,255 +9,291 @@
     <link rel="stylesheet" href="style.css">
     <title>Vix Portfolio</title>
 </head>
-<body class="bg-black">
-    <!-- main offcanvas begins -->
+<body class="bg-black d-flex">
     
-        
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header ">
-
-    <!-- 'X' in the offcanvas  -->
-            <button type="button" id="btn-close" class="btn-close fs-3 bg-light border border-danger rounded-circle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-
-    <!-- list having home, about, portfolio and contact begins -->
-        <div id="offcanvas-body" class="offcanvas-body">
-
-            <ul id="canvas-content" class="d-block px-3">
-
-                <li class="my-5 " id="cont-home" data-bs-dismiss="offcanvas" >
-                    <a href="#home"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">HOME</div> </a>
-                </li>
-                <hr class="text-white mx-5">
-                <li class="my-5 " id="about" data-bs-dismiss="offcanvas"> 
-                    <a href="#first-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">ABOUT</div> </a>
-                </li>
-                <hr class="text-white mx-5">
-                <li class="my-5 " id="portfolio" data-bs-dismiss="offcanvas">                             
-                    <a href="#second-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">PROJECTS</div> </a>
-                </li>
-            </ul>
-        
-        </div>
-        
-        <div id="offcanvas-footer" class="offcanvas-footer">
-        
-            <ul id="main-offcanvas-links" >
-                <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
-                <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
-                <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
-                <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
-                <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
-            </ul>
-            
-        </div>
-    </div>
-
-<!-- main offcanvas ends -->
-
-
-<!-- contact link offcanvas begins -->
-
-    <div class="offcanvas offcanvas-end shadow-lg" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="contactoffcanvas" aria-labelledby="contactoffcanvasLabel">
-        <div class="offcanvas-header">
-
-            <!-- 'X' in the offcanvas  -->
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div id="contact-offcanvas-body" class="contact-offcanvas-body my-auto">
-            <ul>
-                <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
-                <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
-                <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
-                <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
-            </ul>
-        </div>
-
-    </div>
-
-<!-- contact link offcanvas ends -->
-
-
-
-<div class="p-0 m-0 container-fluid">
-    
-    <header class="container-fluid position-fixed">
-
-        <div id="nav" class="container rounded-pill align-text-center mt-2  border border-2 border-white text-white ">
-           
-            <div id="logo-div">
-                <a id="logo-link" class="text-white" href="#">
-                    <div id="logo" class="my-2 bg-black border border-5">
-                    
-                        <img id="image" src="./images/vix.png" alt="">
-                    
-                    </div>
-                </a>
-            </div>
-
-            <div id="links" class="my-auto ms-auto me-0 ">
-                <ul class="mb-0 py-2">
-                    <li id="about" class="d-inline mx-3 ">
-                        <a class="text-light text-decoration-none border-0 " href="#first-hr">About</a>
-                    </li>
-                    <li id="portfolio" class="d-inline mx-3 ">
-                        <a class="text-light text-decoration-none border-0 " href="#second-hr">Projects</a>
-                    </li>
-                    <li id="contact" class="d-inline mx-3"
-                        data-bs-toggle="offcanvas" data-bs-backdrop="false" data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
-                        <a class="text-light text-decoration-none border-0">Contact</a>                             
-                    </li>
-                </ul>
-            </div>
-
-            <div id="drop" class="my-auto ms-auto mb=0 ">
-                <ul class="mb-0" >
-
-        
-                    <li id="hamburger" class="d-inline ">
-                        <img data-bs-toggle="offcanvas"  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" src="./images/list.svg" alt="list">
-                    </li>
-
-
-                </ul>
-            </div>
-        </div>
-    </header>
-
-
-    
-
-
-    <main class="container">
-
-        <!-- home  -->
-        <div id="home" class="container">
-            <div id="writeup-et-pf">
-
-                <div id="writeup">
-                    <h1>
-                        Hello,  <span></span>
-                    </h1>
-                    <h1>
-                        MY NAME IS  <span></span>
-                    </h1>
-                    <h1>
-                        Ofor Uchenna <span></span>
-                    </h1>
-                </div>
-                <a class="ms-auto" href="">
-                    <button id="btn" class="btn btn-outline-danger text-center"> PORTFOLIO</button>
-                </a>
-            </div>
-        </div>
-
-            <hr id="first-hr" class="text-white">
-
-
-
-
-
-
-        <!-- about -->
-        <div id="page-about" class=" mt-5">
-            
-            <div id="about-row" class="align-text-center">
-                <div id="about-col1" class="bg-black">
-                    <img id="me" class="img-fluid" src="./images/me.jpg" alt="">
-                </div>
-                <div id="about-col2" class="">
-                    <p class="text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum adipisci, voluptates maxime ab sapiente recusandae ut necessitatibus minus quaerat eius hic architecto distinctio in corporis fuga tenetur nisi deserunt, nostrum quae ipsum commodi dicta! Earum dicta, libero quia aperiam sapiente eligendi reprehenderit tempore, consequatur temporibus incidunt officia labore cupiditate. Quo voluptatem vitae suscipit nulla voluptatibus blanditiis! Maiores impedit totam quibusdam quos asperiores ex accusantium, expedita reprehenderit quae nostrum modi dolores reiciendis corrupti, nihil sed dolorum alias fugit! Ipsum hic illum iure quos ex, accusantium ipsa voluptatem ducimus enim aliquid repudiandae, expedita provident aspernatur modi perferendis reprehenderit architecto alias reiciendis itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, sint quam aut neque ut, fugiat accusantium, nihil ipsa minus harum culpa et hic repellat nemo molestias officiis blanditiis error earum itaque! Amet molestiae praesentium esse, dolorum cumque similique, deserunt vel autem dolor quaerat repellat fuga commodi ipsum aspernatur ad suscipit exercitationem quidem porro est aut quisquam ratione at modi. Impedit, perferendis! Consectetur modi eius, perspiciatis fugit deleniti nihil iure architecto delectus voluptate ea non ut voluptas, corrupti voluptatibus at saepe facere qui assumenda dolorum alias cumque. Praesentium neque laborum unde.
-                    </p>                   
-                </div>
-            </div>
-            
-        </div>
-
-
-
-
-
-        <hr id="second-hr" class="text-white">
-
-
-
-
-
-        <!-- projects -->
-        <div id="my-projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
-
-                            <div class="card">
-                                <img src="./images/vixinventory.jpg" alt="">
-                                <div class="card-body text-dark">
-                                    A simple inventory site with backend functionalities for CRUD operations as well as user authentication and authorization.                                 
-                                </div>
-                                
-                                <div class="card-footer text-dark" >
-                                Stack used: <br> HTML5, CSS3, Bootstrap, Chart.js, Django, dbsqlite3.
-                                </div>
-                            </div> 
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
-
-                            <div class="card">
-                                <img src="./images/vixinventory.jpg" alt="">
-                                <div class="card-body text-dark">
-                                    A simple inventory site with backend functionalities for CRUD operations as well as user authentication and authorization.                                 
-                                </div>
-                                
-                                <div class="card-footer text-dark" >
-                                Stack used: <br> HTML5, CSS3, Bootstrap, Chart.js, Django, dbsqlite3.
-                                </div>
-                            </div> 
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
-
-                            <div class="card">
-                                <img src="./images/vixinventory.jpg" alt="">
-                                <div class="card-body text-dark">
-                                    A simple inventory site with backend functionalities for CRUD operations as well as user authentication and authorization.                                 
-                                </div>
-                                
-                                <div class="card-footer text-dark" >
-                                Stack used: <br> HTML5, CSS3, Bootstrap, Chart.js, Django, dbsqlite3.
-                                </div>
-                            </div> 
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
-
-                            <div class="card">
-                                <img src="./images/vixinventory.jpg" alt="">
-                                <div class="card-body text-dark">
-                                    A simple inventory site with backend functionalities for CRUD operations as well as user authentication and authorization.                                 
-                                </div>
-                                
-                                <div class="card-footer text-dark" >
-                                Stack used: <br> HTML5, CSS3, Bootstrap, Chart.js, Django, dbsqlite3.
-                                </div>
-                            </div> 
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
   
+            
+        <!-- main offcanvas begins -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header ">
 
-</div>
+        <!-- 'X' in the offcanvas  -->
+                <button type="button" id="btn-close" class="btn-close fs-3 bg-light border border-danger rounded-circle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+
+        <!-- list having home, about, portfolio and contact begins -->
+            <div id="offcanvas-body" class="offcanvas-body">
+
+                <ul id="canvas-content" class="d-block px-3">
+
+                    <li class="my-5 " id="cont-home" data-bs-dismiss="offcanvas" >
+                        <a href="#home"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">HOME</div> </a>
+                    </li>
+                    <hr class="text-white mx-5">
+                    <li class="my-5 " id="about" data-bs-dismiss="offcanvas"> 
+                        <a href="#first-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">ABOUT</div> </a>
+                    </li>
+                    <hr class="text-white mx-5">
+                    <li class="my-5 " id="portfolio" data-bs-dismiss="offcanvas">                             
+                        <a href="#second-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">PROJECTS</div> </a>
+                    </li>
+                </ul>
+            
+            </div>
+            
+            <!-- <div id="offcanvas-footer" class="offcanvas-footer">
+            
+                <ul id="main-offcanvas-links" >
+                    <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
+                    <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
+                    <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
+                    <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
+                    <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
+                </ul>
+                
+            </div> -->
+        </div>
+
+        <!-- main offcanvas ends -->
+
+
+        <!-- contact link offcanvas begins -->
+
+        <div class="offcanvas offcanvas-end shadow-lg" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="contactoffcanvas" aria-labelledby="contactoffcanvasLabel">
+            <div class="offcanvas-header">
+
+                <!-- 'X' in the offcanvas  -->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div id="contact-offcanvas-body" class="contact-offcanvas-body my-auto">
+                <ul>
+                    <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
+                    <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
+                    <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
+                    <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- contact link offcanvas ends -->
+
+
+
+        <div class="p-0 m-0 container-fluid">
+            
+            <header class="container-fluid position-fixed">
+
+                <div id="nav" class="container align-text-center mt-2  ps-0 border border-2 rounded-pill border-white text-white ">
+                
+                    <div id="logo-div" class="">
+                        <a id="logo-link" class="text-white" href="#home">
+                            <div id="logo" class=" bg-black border border-5 m-1 rounded-pill">
+                            
+                                <img id="image" src="./images/vixnew.jpg" alt="">
+                            
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="links" class="my-auto ms-auto me-0 ">
+                        <ul class="mb-0 py-2">
+                            <li id="about" class="d-inline mx-3 ">
+                                <a class="text-light text-decoration-none border-0 " href="#first-hr">About</a>
+                            </li>
+                            <li id="portfolio" class="d-inline mx-3 ">
+                                <a class="text-light text-decoration-none border-0 " href="#second-hr">Projects</a>
+                            </li>
+                            <li id="contact" class="d-inline mx-3"
+                                data-bs-toggle="offcanvas" data-bs-backdrop="false" data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
+                                <a class="text-light text-decoration-none border-0">Contact</a>                             
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="drop" class="my-auto ms-auto mb=0 ">
+                        <ul class="mb-0" >
+
+                
+                            <li id="hamburger" class="d-inline ">
+                                <img data-bs-toggle="offcanvas"  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" src="./images/list.svg" alt="list">
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+               
+
+                
+
+            </header>
+            
+
+
+            
+
+
+            <main class="container">
+
+                <!-- home  -->
+                <div id="home" class="container">
+                    <div id="writeup-et-pf">
+
+                        <div id="writeup">
+                            <h1>
+                                Hello, I am <span></span>
+                            </h1>
+                            <h1>
+                                Ofor Uchenna,  <span></span>
+                            </h1>
+                            <h1>
+                               A Fullstack Web Developer<span></span>
+                            </h1>
+                        </div>
+                        <a class="ms-auto" href="">
+                            <button id="btn" class="btn btn-outline-danger text-center">Download CV</button>
+                        </a>
+                    </div>
+                </div>
+
+                    <hr id="first-hr" class="text-white">
+
+
+
+
+
+
+                <!-- about -->
+                <div id="page-about">
+                    
+                    <div id="about-row" class=" my-5 ">
+                        <div id="about-col1" >
+                            <img id="me" class="text-center " src="./images/me.jpg" alt="">
+                        </div>
+                        <div id="about-col2" >
+                            <h3 class="text-center text-danger my-4">
+                                About Me
+                            </h3>
+                            <p class="text-white mx-4">
+                                I'm Uchenna, you can call me Vixpression or Vix for short😌. A backend focused full stack web developer, photographer📸, poet✍🏽, graphic designer✒️ and artist🎨 currently based in Nigeria, who loves what he does. <br> <br>
+                                I started my career as a freelance designer and photographer where I built my fundamentals in the design space creating logos, fliers and capturing beautiful moments. Then I ventured into tech where I learnt frontend basics. #
+                                And to further take the journey up a notch, kickstarted a fullstack approach with Python, and Django web framework, for the backend. <br> <br> 
+                                Right now I'm a freelance fullstack developer with 1+ years of experience. A short time, I know, but value doesn't mind age🙂
+                                <br> <br>
+                                I'm currently aiming to level up as much as I can while making networks along the way. On the side, I'm playing around with ethical hacking and the web 3.0 space, NFTs to be precise.. <br> <br>
+                                Without a doubt, I'm thrilled by design and logic; and I solve problems for fun. When I'm not working, I'm either watching a movie 🍿🎞️, whipping my friends on FIFA 🎮, listening to some tracks 🎶, sharing memes 🤡, making some artistic magic 🎨✍🏽📸 or being lost in my maze of a mind 🧠.
+                                <br><br> Because I'm a huge fan of simplicity ❤️ this site was built with just HTML, CSS and Bootstrap, without any javascript framework or library.
+
+                            </p>                   
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+
+
+                <hr id="second-hr" class="text-white">
+
+
+
+
+
+                <!-- projects -->
+                <div id="my-projects">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-4">
+                                <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
+
+                                    <div class="card">
+                                        <img src="./images/vixinventory.jpg" alt="">
+                                        <div class="card-body text-dark text-center fw-bold">
+                                            A simple inventory site with backend functionalities for CRUD operations as well as user authentication and authorization.      
+                                        </div>
+                                    
+                                        <div class="card-footer text-dark" >
+                                        Stack used: <br> HTML5, CSS3, Bootstrap, Chart.js, Django, dbsqlite3.
+                                        </div>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <!-- <div class="col-lg-4 col-md-6">
+                                <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
+
+                                    <div class="card">
+                                        <img src="./images/vixinventory.jpg" alt="">
+                                        <div class="card-body text-dark">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam aliquam unde consectetur! At accusamus, minus nihil, aut nostrum impedit nesciunt excepturi quis aliquam itaque quos error laudantium in repudiandae?                                </div>
+                                        
+                                        <div class="card-footer text-dark" >
+                                        Stack used: <br> Lorem ipsum dolor sit amet.
+                                        </div>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
+
+                                    <div class="card">
+                                        <img src="./images/vixinventory.jpg" alt="">
+                                        <div class="card-body text-dark">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam aliquam unde consectetur! At accusamus, minus nihil, aut nostrum impedit nesciunt excepturi quis aliquam itaque quos error laudantium in repudiandae?                                </div>
+                                        
+                                        <div class="card-footer text-dark" >
+                                        Stack used: <br> Lorem ipsum dolor sit amet.
+                                        </div>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
+
+                                    <div class="card">
+                                        <img src="./images/vixinventory.jpg" alt="">
+                                        <div class="card-body text-dark">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam aliquam unde consectetur! At accusamus, minus nihil, aut nostrum impedit nesciunt excepturi quis aliquam itaque quos error laudantium in repudiandae?                                </div>
+                                        
+                                        <div class="card-footer text-dark" >
+                                        Stack used: <br> Lorem ipsum dolor sit amet.
+                                        </div>
+                                    </div> 
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            
+
+        </div>
+        <footer id="page-footer1" class="m-0 position-fixed">
+            <div id="page-footer" class="container text-center text-white ">
+                Copyright &copy; <script>document.write(new Date().getFullYear())</script> 
+            </div>
+        </footer>
+        <footer id="page-footer2" class="m-0 position-fixed">
+            <div id="page-footer" class="container p-2 text-center text-white ">
+                <ul id="page-footer-links" >
+                    <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
+                    <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
+                    <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
+                    <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
+                    <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+   
+    
 
 </body>
 <script src="./bootstrap/bootstrap.bundle.min.js"></script>

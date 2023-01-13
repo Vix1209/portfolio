@@ -8,8 +8,8 @@ html{
 body{
     width: 100vw;
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    
+ 
 }
 
 
@@ -42,6 +42,28 @@ header{
     z-index: 1;
 }
 
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+   
+}
+
+#page-footer{
+    border-radius: 50px 50px 0 0;
+    background-color: #9B2733;
+
+}
+
+/* #contact-button-div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+   
+} */
+
 #nav{
     position: relative;
     z-index: 1;
@@ -54,15 +76,14 @@ header{
 /* header: logo  */
 
 #logo{
-    border-radius: 90px;
-    height: 150px;
-    width: 150px;
+    /* border-radius: 50%; */
+    height: 80px;
+    width: 80px;
     
 }
  
 #image{
-    width: 180px;
-    margin-top: 40px;
+    width: 100%;
     height: auto;
 }
 
@@ -128,6 +149,10 @@ main{
     position: relative;
     height: 100vh;
     overflow-y: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/mainpagelandscape.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
 }
 
 #writeup-et-pf{
@@ -155,24 +180,25 @@ main{
     animation: text-reveal .5s ease forwards;
     animation-delay: 1.5s;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
 }
 
 #writeup h1:nth-child(1) {
     animation-delay: 2s;
 }
+
 #writeup h1:nth-child(2) {
-    animation-delay: 3s;
-}
-#writeup h1:nth-child(3) {
     animation:text-reveal-name .5s ease forwards;
-    animation-delay: 4s;
+    animation-delay: 3s;
     font-size: 90px;
     padding: 20px 0;
     letter-spacing: 8px;
     line-height: 70px;
 }
 
+#writeup h1:nth-child(3) {
+    animation-delay: 4s;
+}
 #writeup h1 span{
     position:absolute;
     top: 0;
@@ -226,18 +252,27 @@ main{
 #page-about{
     width: 100%;
     position: relative;
-    height: 100vh;
+    padding-top: 100px;
+    height: 940px;
     overflow-y: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/aboutmelandscape.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
     
+}
+#page-footer2{
+    display: none;
 }
 
 #about-row{
     width: 100%;
     position: absolute;
-    margin-top: 190px;
+    margin-top:200px;
     text-align: center;
     display: flex;
-    height: 500px;
+    height: auto;
+    margin: 100px 0;
     justify-content: space-around;
 
 }
@@ -245,6 +280,8 @@ main{
 #about-col1{
    background-size: auto;
    width: 30%;
+   margin-top: 30px;
+   
 
 }
 
@@ -258,19 +295,23 @@ main{
 
 #about-col2{
     width: 50%;
+    height: auto;
 }
 
+#about-col2 h3{
+    overflow-y: hidden;
+}
 /* main: projects */
 
 #my-projects{
     width: 100%;
     position: relative;
-    height: auto;
+    height: 100%;
     overflow-y: hidden;
 }
 
 #my-projects .row{
-    margin-top: 185px;
+    margin: 190px 0;
 }
 
 #my-projects .card{
@@ -288,14 +329,8 @@ main{
 
 
 
-
 @media (max-width:993px){
-    body{
-        /* background-image: linear-gradient(rgba(0,0,0,0.90),rgba(0,0,0,0.90)), url(./images/pexels-markus-spiske-330771.jpg); */
-        background-repeat: no-repeat;
-        background-size: 100% 920px;
-        /* background-attachment: fixed; */
-    }
+ 
 
     #logo-div{
         width: 70%;
@@ -327,15 +362,15 @@ main{
         animation-delay: 2s;
     }
     #writeup h1:nth-child(2) {
-        animation-delay: 3s;
-    }
-    #writeup h1:nth-child(3) {
         animation:text-reveal-name .5s ease forwards;
-        animation-delay: 4s;
         font-size: 60px;
         padding: 15px 0;
         letter-spacing: 2px;
         line-height: 50px;
+        animation-delay: 3s;
+    }
+    #writeup h1:nth-child(3) {
+        animation-delay: 4s;
     
     }
        
@@ -403,16 +438,50 @@ main{
 
 
     #page-about{
-        height: 1280px;
+        min-height: 1550px;
+        position: relative;
+        background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url(./images/aboutme.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
     
+    #page-footer-links{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin:9px 10px;
+    }
+    #page-footer-links li{
+        width: 15px;
+        height: auto;
+        position: relative;
+
+    }
+
+    footer{
+        background-color: transparent;
+    }
+    #page-footer2{
+        display: block;
+        background-color: rgb(0,0,0, 0.2);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    #page-footer1{
+        display: none;
+    }
     #about-row{
-       
-       margin-top: 170px;
-       top: 0;
+       margin-top: 1330px;
        transform: translateY(0);
     }
 
+    #about-col1{
+        margin-top: 0;
+    }
+    #aboutmepara{
+        background: transparent;
+    }
     #my-projects{
         width: 100%;
         position: relative;
@@ -425,12 +494,12 @@ main{
 
     /* main offcanvas */
    
-    #offcanvas-footer{
+    /* #offcanvas-footer{
 
         position: relative;
-        background-color: rgb(94, 13, 21);
+        background-color: rgb(219, 51, 68);
         margin-top: auto;
-    }
+    } */
 
     #main-offcanvas-links{
         display: flex;
@@ -495,10 +564,10 @@ main{
     #page-about{
         width: 100%;
         position: relative;
-        height: 100vh;
         overflow-y: hidden;
-        
+          
     }
+    
     
     #about-row{
         width: 100%;
@@ -506,7 +575,7 @@ main{
         margin-top: 0;
         top: 50%;
         transform: translateY(-50%);
-        text-align: center;
+        /* text-align: center; */
         display: block;
         height: auto;
     }
