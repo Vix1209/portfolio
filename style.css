@@ -250,7 +250,7 @@ main{
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/aboutmelandscape.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     
 }
 #page-footer2{
@@ -435,7 +435,7 @@ main{
         background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url(./images/aboutme.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
     }
 
     #about-row{
