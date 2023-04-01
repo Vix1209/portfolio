@@ -8,8 +8,6 @@ html{
 body{
     width: 100vw;
     min-height: 100%;
-    
- 
 }
 
 
@@ -70,8 +68,8 @@ footer{
 
 #logo{
     /* border-radius: 50%; */
-    height: 80px;
-    width: 80px;
+    height: 55px;
+    width: 55px;
     
 }
  
@@ -592,7 +590,3 @@ main{
     }
 
 } 
-
-
-
- 
