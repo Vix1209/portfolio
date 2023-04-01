@@ -441,6 +441,10 @@ main{
 
     }
 
+    #page-about h3{
+        overflow-y: hidden;
+    }
+    
     #about-row{
        /* margin-top: 1330px; */
        transform: translateY(0);
