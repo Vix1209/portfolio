@@ -246,7 +246,7 @@ main{
     width: 100%;
     position: relative;
     padding-top: 100px;
-    height: 940px;
+    height: 100vh;
     overflow-y: hidden;
     
     
@@ -278,14 +278,16 @@ main{
     height: auto;
     border-radius: 26px;
     margin-bottom: 20px;
+    /* margin-top: 30px; */
     text-align: center;
-    width: 100%;
+    max-width: 310px;
 }
 
 #about-col2{
     width: 50%;
     height: auto;
     padding: 30px 0 0 0;
+    margin-top: 50px;
 
 }
 
@@ -434,7 +436,7 @@ main{
     #page-about{
         min-height: 1000px;
         position: relative;
-        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/IMG-20230402-WA0141.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url(./images/background.jpg);
         background-repeat: no-repeat;
         background-size: cover ;
         /* background-attachment: fixed; */
@@ -573,11 +575,12 @@ main{
     }
     
     #me{
-        max-width:250px;
+        max-width:210px;
         background-size: cover;
         height: auto;
-        border-radius: 26px;
-        margin-bottom: 20px;
+        /* border-radius: 100%; */
+        border-radius: 25px;
+        margin: 60px 0 20px 0;
         text-align: center;
     }
 
