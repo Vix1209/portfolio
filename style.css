@@ -434,7 +434,7 @@ main{
     #page-about{
         min-height: 1000px;
         position: relative;
-        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/pexels-cottonbro-studio-5474040.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/IMG-20230402-WA0141.jpg);
         background-repeat: no-repeat;
         background-size: cover ;
         /* background-attachment: fixed; */
