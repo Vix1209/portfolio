@@ -86,6 +86,8 @@
 
 
     <div class="p-0 m-0 container-fluid">
+
+        <!-- navbar  -->
         <header class="container-fluid position-fixed">
 
             <div id="nav"
@@ -102,23 +104,25 @@
                     <ul>
                         <li id="contact" data-bs-toggle="offcanvas" data-bs-backdrop="false"
                             data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
-                            <a class="btn fw-light text-light">Contact</a>
+                            <a class="btn fw-bold text-light">Contact</a>
                         </li>
                     </ul>
                 </div>
 
-                <div id="links" class="my-auto ms-auto me-0 ">
+                <div id="links" class="my-auto ms-auto me-0">
                     <ul class="mb-0 py-2">
-                        <li id="about" class="d-inline mx-3 ">
+                        <li id="about" class="d-inline mx-3">
                             <a class="text-light text-decoration-none border-0 " href="#first-hr">About</a>
                         </li>
-                        <li id="portfolio" class="d-inline mx-3 ">
-                            <a class="text-light text-decoration-none border-0 " href="#second-hr">Projects</a>
+
+                        <li id="contact" class="d-inline mx-3">
+                            <a class="text-light text-decoration-none border-0" href="#second-hr">Achievements</a>
                         </li>
-                        <!-- <li id="contact" class="d-inline mx-3"
-                                data-bs-toggle="offcanvas" data-bs-backdrop="false" data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
-                                <a class="text-light text-decoration-none border-0">Contact</a>                             
-                            </li> -->
+
+                        <li id="portfolio" class="d-inline mx-3 ">
+                            <a class="text-light text-decoration-none border-0 " href="#third-hr">Projects</a>
+                        </li>
+
                     </ul>
                 </div>
 
@@ -153,7 +157,7 @@
                             Ofor Uchenna, <span></span>
                         </h1>
                         <h1>
-                            Web Developer | Data Scientist<span></span>
+                            Web Developer || Data Scientist<span></span>
                         </h1>
                     </div>
                     <a class="ms-auto" href="./images/OforUchennaCV.pdf" download>
@@ -168,7 +172,7 @@
             <div id="page-about">
                 <div>
                     <h3 class="text-center text-danger mb-4 display-4 py-2">
-                        About Me
+                        Me!
                     </h3>
                     <div id="about-row" class=" mb-3 ">
                         <div id="about-col1">
@@ -198,12 +202,60 @@
 
             <hr id="second-hr" class="text-white">
 
+            <!-- volunteering  -->
+            <div id="volunteering">
+                <div>
+                    <h3 class="text-center text-danger mb-4 display-4 py-2">
+                        Social Gatherings
+                    </h3>
+                    <div id="volunteering-row" class=" mb-3 ">
+                        <div id="volunteering-col1">
+
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="5000">
+                                        <img src="/images/uche.JPG" class="d-block w-100" alt="uche1">
+                                    </div>
+                                    <!-- <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="/images/uche2.JPG" class="d-block w-100" alt="uche2">
+                                    </div> -->
+                                    <!-- <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="..." class="d-block w-100" alt="...">
+                                  </div> -->
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- <div id="volunteering-col2">
+
+                            <p class="text-white mx-4">
+                             .
+
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <hr id="third-hr" class="text-white">
+
             <!-- projects -->
             <div id="my-projects">
                 <div class="container">
 
                     <div class="row" id="project-rows">
-                        <h3 class="text-center text-danger mb-3 display-4 py-2">Projects Demo</h3>
+                        <h3 class="text-center text-danger mb-3 display-4 py-2">Demo</h3>
 
                         <div class="col-lg-4">
                             <a class="text-decoration-none" href="https://veepay.onrender.com/" target="_blank">
@@ -324,12 +376,14 @@
         </main>
 
     </div>
+
     <footer id="page-footer1" class="m-0 position-fixed">
         <div id="page-footer" class="container text-center py-2 text-white ">
             Vixpression Copyright &copy;
             <script>document.write(new Date().getFullYear())</script>
         </div>
     </footer>
+
     <footer id="page-footer2" class="m-0 position-fixed">
         <div id="page-footer" class="container py-2 text-center text-white ">
             <ul id="page-footer-links">
