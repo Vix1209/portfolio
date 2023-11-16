@@ -1,288 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/vixnew.jpg" />
-    <meta
-      name="description"
-      content="Software Developer"
-    />
+    <meta name="description" content="Software Developer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Vix Portfolio</title>
 </head>
-<body class="bg-black d-flex">
-    
-  
-            
-        <!-- main offcanvas begins -->
-        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header ">
 
-        <!-- 'X' in the offcanvas  -->
-                <button type="button" id="btn-close" class="btn-close fs-3 bg-light border border-danger rounded-circle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
+<body class="bg-black d-flex">
+
+
+
+    <!-- main offcanvas begins -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header ">
+
+            <!-- 'X' in the offcanvas  -->
+            <button type="button" id="btn-close" class="btn-close fs-3 bg-light border border-danger  rounded-circle"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
 
 
         <!-- list having home, about, portfolio and contact begins -->
-            <div id="offcanvas-body" class="offcanvas-body">
+        <div id="offcanvas-body" class="offcanvas-body">
 
-                <ul id="canvas-content" class="d-block px-3">
+            <ul id="canvas-content" class="d-block px-3">
 
-                    <li class="my-5 " id="cont-home" data-bs-dismiss="offcanvas" >
-                        <a href="#home"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">HOME</div> </a>
-                    </li>
-                    <hr class="text-white mx-5">
-                    <li class="my-5 " id="about" data-bs-dismiss="offcanvas"> 
-                        <a href="#first-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">ABOUT</div> </a>
-                    </li>
-                    <hr class="text-white mx-5">
-                    <li class="my-5 " id="portfolio" data-bs-dismiss="offcanvas">                             
-                        <a href="#second-hr"> <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">PROJECTS</div> </a>
-                    </li>
-                </ul>
-            
-            </div>
-            
-            
-        </div>
-        <!-- main offcanvas ends -->
-
-
-        <!-- contact link offcanvas begins -->
-        <div class="offcanvas offcanvas-end shadow-lg" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="contactoffcanvas" aria-labelledby="contactoffcanvasLabel">
-            <div class="offcanvas-header">
-
-                <!-- 'X' in the offcanvas  -->
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div id="contact-offcanvas-body" class="contact-offcanvas-body my-auto">
-                <ul>
-                    <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
-                    <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
-                    <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
-                    <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
-                </ul>
-            </div>
+                <li class="my-5 " id="cont-home" data-bs-dismiss="offcanvas">
+                    <a href="#home">
+                        <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">HOME</div>
+                    </a>
+                </li>
+                <hr class="text-white mx-5">
+                <li class="my-5 " id="about" data-bs-dismiss="offcanvas">
+                    <a href="#first-hr">
+                        <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">ABOUT</div>
+                    </a>
+                </li>
+                <hr class="text-white mx-5">
+                <li class="my-5 " id="portfolio" data-bs-dismiss="offcanvas">
+                    <a href="#second-hr">
+                        <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">PROJECTS</div>
+                    </a>
+                </li>
+            </ul>
 
         </div>
-        <!-- contact link offcanvas ends -->
 
 
-        <div class="p-0 m-0 container-fluid">           
-            <header class="container-fluid position-fixed">
+    </div>
+    <!-- main offcanvas ends -->
 
-                <div id="nav" class="container align-text-center mt-3  ps-0 border border-2 rounded-pill border-white text-white ">
-                
-                    <div id="logo-div" class="">
-                        <a id="logo-link" class="text-white" href="#home">
-                            <div id="logo" class=" bg-black border border-5 m-1 rounded-pill">
-                            
-                                <img id="image" src="./images/vixnew.jpg" alt="">
-                            
-                            </div>
-                        </a>
-                    </div>
 
-                    <div id="links" class="my-auto ms-auto me-0 ">
-                        <ul class="mb-0 py-2">
-                            <li id="about" class="d-inline mx-3 ">
-                                <a class="text-light text-decoration-none border-0 " href="#first-hr">About</a>
-                            </li>
-                            <li id="portfolio" class="d-inline mx-3 ">
-                                <a class="text-light text-decoration-none border-0 " href="#second-hr">Projects</a>
-                            </li>
-                            <li id="contact" class="d-inline mx-3"
+    <!-- contact link offcanvas begins -->
+    <div class="offcanvas offcanvas-end shadow-lg" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+        id="contactoffcanvas" aria-labelledby="contactoffcanvasLabel">
+        <div class="offcanvas-header">
+
+            <!-- 'X' in the offcanvas  -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="contact-offcanvas-body" class="contact-offcanvas-body my-auto">
+            <ul>
+                <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img
+                            src="./images/linkedin-brands.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img
+                            src="./images/twitter-brands.svg" alt=""></a></li>
+                <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg"
+                            alt=""></a></li>
+                <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- contact link offcanvas ends -->
+
+
+    <div class="p-0 m-0 container-fluid">
+        <header class="container-fluid position-fixed">
+
+            <div id="nav"
+                class="container align-text-center mt-3  ps-0 border border-2 rounded-pill border-white text-white ">
+
+                <div id="logo-div" class="">
+                    <a id="logo-link" class="text-white me-4" href="#home">
+                        <div id="logo" class=" bg-black border border-5 m-1 rounded-pill">
+
+                            <img id="image" src="./images/vixnew.jpg" alt="">
+
+                        </div>
+                    </a>
+                    <ul>
+                        <li id="contact" data-bs-toggle="offcanvas" data-bs-backdrop="false"
+                            data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
+                            <a class="btn fw-light text-light">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="links" class="my-auto ms-auto me-0 ">
+                    <ul class="mb-0 py-2">
+                        <li id="about" class="d-inline mx-3 ">
+                            <a class="text-light text-decoration-none border-0 " href="#first-hr">About</a>
+                        </li>
+                        <li id="portfolio" class="d-inline mx-3 ">
+                            <a class="text-light text-decoration-none border-0 " href="#second-hr">Projects</a>
+                        </li>
+                        <!-- <li id="contact" class="d-inline mx-3"
                                 data-bs-toggle="offcanvas" data-bs-backdrop="false" data-bs-target="#contactoffcanvas" aria-controls="contactoffcanvas">
                                 <a class="text-light text-decoration-none border-0">Contact</a>                             
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div id="drop" class="my-auto ms-auto mb=0 ">
-                        <ul class="mb-0" >
-
-                
-                            <li id="hamburger" class="d-inline ">
-                                <img data-bs-toggle="offcanvas"  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" src="./images/list.svg" alt="list">
-                            </li>
-
-
-                        </ul>
-                    </div>
+                            </li> -->
+                    </ul>
                 </div>
-               
 
-            </header>
-            
-            <main id="main" class="container p-0">
+                <div id="drop" class="my-auto ms-auto mb=0 ">
+                    <ul class="mb-0">
 
-                <!-- home  -->
-                <div id="home" class="container">
-                    <div id="writeup-et-pf">
 
-                        <div id="writeup">
-                            <h1>
-                                Hello, I am <span></span>
-                            </h1>
-                            <h1>
-                                Ofor Uchenna,  <span></span>
-                            </h1>
-                            <h1>
-                               A Fullstack Web Developer<span></span>
-                            </h1>
+                        <li id="hamburger" class="d-inline ">
+                            <img data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                                aria-controls="offcanvasWithBothOptions" src="./images/list.svg" alt="list">
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </header>
+
+        <main id="main" class="container p-0">
+
+            <!-- home  -->
+            <div id="home" class="container">
+                <div id="writeup-et-pf">
+
+                    <div id="writeup">
+                        <h1>
+                            Hello, I am <span></span>
+                        </h1>
+                        <h1>
+                            Ofor Uchenna, <span></span>
+                        </h1>
+                        <h1>
+                            Software Engineer & Data Scientist<span></span>
+                        </h1>
+                    </div>
+                    <a class="ms-auto" href="./images/OforUchennaCV.pdf" download>
+                        <button id="btn" class="btn btn-outline-danger text-center">Download CV</button>
+                    </a>
+                </div>
+            </div>
+
+            <hr id="first-hr" class="text-white">
+
+            <!-- about -->
+            <div id="page-about">
+                <div>
+                    <h3 class="text-center text-danger mb-4 display-4 py-2">
+                        About Me
+                    </h3>
+                    <div id="about-row" class=" mb-3 ">
+                        <div id="about-col1">
+                            <img id="me" class="text-center border border-white border-5"
+                                src="./images/IMG-20230402-WA0138.jpg" alt="">
                         </div>
-                        <a class="ms-auto" href="./images/OforUchennaCV.pdf" download>
-                            <button id="btn" class="btn btn-outline-danger text-center">Download CV</button>
-                        </a>
-                    </div>
-                </div>
+                        <div id="about-col2">
 
-                <hr id="first-hr" class="text-white">
+                            <p class="text-white mx-4">
+                                Hi, I'm Uchenna, a developer with almost 2 years of experience building fast, scalable,
+                                and functioning websites using JavaScript, Typescript, and Python, as well as frameworks
+                                and libraries such as React, Django, and so on.
+                                <br><br>
+                                A few of my interests and hobbies include Artificial Intelligence, Music, Video games,
+                                photography and having interpersonal communications. I see my work as Seriously Fun,
+                                because I take it SERIOUSLY, while doing it for FUN.
+                                <br><br>
+                                In summary, I'm all about making magic with the flow of logic, alongside well-sculpted
+                                displays of rich artistry, in my web applications.
 
-                <!-- about -->
-                <div id="page-about">
-                    <div>
-                        <h3 class="text-center text-danger mb-4 display-4 py-2">
-                            About Me
-                        </h3>
-                        <div id="about-row" class=" mb-3 ">
-                            <div id="about-col1" >
-                                <img id="me" class="text-center border border-white border-5" src="./images/IMG-20230402-WA0138.jpg" alt="">
-                            </div>
-                            <div id="about-col2" >
-                                
-                                <p class="text-white mx-4">
-                                    Hi, I'm Uchenna, a developer with almost 2 years of experience building fast, scalable, and functioning websites using JavaScript, Typescript, and Python, as well as frameworks and libraries such as React, Django, and so on.
-                                    <br><br>
-                                    A few of my interests and hobbies include Artificial Intelligence, Music, Video games, photography and having interpersonal communications. I see my work as Seriously Fun, because I take it SERIOUSLY, while doing it for FUN.
-                                    <br><br>
-                                    In summary, I'm all about making magic with the flow of logic, alongside well-sculpted displays of rich artistry, in my web applications.
-                                    
-                                </p>                   
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <hr id="second-hr" class="text-white">
-
-                <!-- projects -->
-                <div id="my-projects">
-                    <div class="container">
-                        
-                        <div class="row">
-                            <h3 class="text-center text-danger mb-3 display-4 py-2">Projects</h3>
-
-                            <div class="col-lg-4">
-                                <a class="text-decoration-none" href="https://veepay.onrender.com/" target="_blank">
-
-                                    <div class="card">
-                                        <img class="img-fluid" src="./images/veepay-telecom.png" alt="">
-                                        <div class="card-body text-dark text-center fw-bold">
-                                            A telecommunication web application aimed at rendering payment services for our internet, cable and airtime needs. Integrating payment, bulk sms and subscription APIs, authentication and authorization operations using email tokens. As well as newsletter services to keep users and subscribers informed of future updates
-                                        
-                                        </div>
-                                    
-                                        <div class="card-footer text-dark text-center" >
-                                            <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank" href="https://github.com/vix1209/veepay-app"> <button class="btn btn-primary rounded btn-sm">Github</button></a>
-                                        </div>
-                                        
-                                    </div> 
-                                </a>
-                            </div>
-                          
-                            <div class="col-lg-4">
-                                <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
-
-                                    <div class="card">
-                                        <img class="img-fluid" src="./images/vixinventory.png" alt="">
-                                        <div class="card-body text-dark text-center fw-bold">
-                                            A full stack E-commerce site, used to keep track of User activities and profile. As well as, inventory of company products, and orders made within an organization or startup. with backend functionalities for CRUD operations as well as user authentication and authorization.      
-                                        </div>
-                                    
-                                       
-                                        <div class="card-footer text-dark text-center" >
-                                            <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank" href="https://github.com/vix1209/vixinventory"> <button class="btn btn-primary rounded btn-sm">Github</button></a>
-                                        </div>
-                                    </div> 
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <a class="text-decoration-none" href="https://cryptoverse-by-vix.netlify.app" target="_blank">
-
-                                    <div class="card">
-                                        <img class="img-fluid" src="./images/cryptoverse.jpg" alt="">
-                                        <div class="card-body text-dark text-center fw-bold">
-                                            A cryptocurrency web application aimed at keeping track of latest crypto news all round the world as well as crypto details and info. In real time. <br> <br> Created using React.js, Redux-toolkit and ant design amongst others                                        </div>
-                                    
-                                        <div class="card-footer text-dark text-center" >
-                                            <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank" href="https://github.com/vix1209/cryptoverse"> <button class="btn btn-primary rounded btn-sm">Github</button></a>
-                                        </div>
-                                    </div> 
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <a class="text-decoration-none" href="https://voyagrr.netlify.app" target="_blank">
-
-                                    <div class="card">
-                                        <img class="img-fluid" src="./images/voyagrr.png" alt="">
-                                        <div class="card-body text-dark text-center fw-bold">
-                                            A simple landing page of a travel website aiming to give tourists the best treatment while on their trip
-                                        </div>
-                                    
-                                        <div class="card-footer text-dark text-center" >
-                                            <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank" href="https://github.com/vix1209/voyagrr"> <button class="btn btn-primary rounded btn-sm">Github</button></a>
-                                        </div>
-                                    </div> 
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <a class="text-decoration-none" href="https://archinterior.netlify.app" target="_blank">
-
-                                    <div class="card">
-                                        <img class="img-fluid" src="./images/archinterior.png" alt="">
-                                        <div class="card-body text-dark text-center fw-bold">
-                                            A single page website showcasing architectural and interior design prowess. A site perfect for interior designers, realtors and architects.       
-                                        </div>
-                                    
-                                        <div class="card-footer text-dark text-center" >
-                                            <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank" href="https://github.com/vix1209/archinterior"> <button class="btn btn-primary rounded btn-sm">Github</button></a>
-                                        </div>
-                                    </div> 
-                                </a>
-                            </div>
-
+                            </p>
                         </div>
                     </div>
                 </div>
 
-            </main>
+            </div>
 
+            <hr id="second-hr" class="text-white">
+
+            <!-- projects -->
+            <div id="my-projects">
+                <div class="container">
+
+                    <div class="row">
+                        <h3 class="text-center text-danger mb-3 display-4 py-2">Projects Demo</h3>
+                        <hr/>
+
+                        <div class="col-lg-4">
+                            <a class="text-decoration-none" href="https://veepay.onrender.com/" target="_blank">
+
+                                <div class="card bg-black">
+                                    <img class="img-fluid" src="./images/veepay-telecom.png" alt="">
+                                    <div class="card-body text-light text-center fw-bold">
+                                        Veepay Telecommunication
+
+                                    </div>
+
+                                    <div class="card-footer text-dark text-center">
+                                        <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank"
+                                            href="https://github.com/vix1209/veepay-app"> <button
+                                                class="btn btn-outline-danger text-light rounded btn-sm">Github</button></a>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <a class="text-decoration-none" href="https://vixinventory.onrender.com" target="_blank">
+
+                                <div class="card bg-black">
+                                    <img class="img-fluid" src="./images/vixinventory.png" alt="">
+                                    <div class="card-body text-light text-center fw-bold">
+                                        Vixinventory
+                                    </div>
+
+
+                                    <div class="card-footer text-dark text-center">
+                                        <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank"
+                                            href="https://github.com/vix1209/vixinventory"> <button
+                                                class="btn btn-outline-danger text-light rounded btn-sm">Github</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <a class="text-decoration-none" href="https://ai-financeer.vercel.app" target="_blank">
+
+                                <div class="card bg-black">
+                                    <img class="img-fluid" src="./images/Aifinance.png" alt="">
+                                    <div class="card-body text-light text-center fw-bold">
+                                        AI-FinanSeer
+                                    </div>
+
+                                    <div class="card-footer text-dark text-center">
+                                        <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank"
+                                            href="https://github.com/Vix1209/Ai-Finanseer"> <button
+                                                class="btn btn-outline-danger text-light rounded btn-sm">Github</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <a class="text-decoration-none" href="https://cryptoverse-by-vix.netlify.app"
+                                target="_blank">
+
+                                <div class="card bg-black">
+                                    <img class="img-fluid" src="./images/cryptoverse.jpg" alt="">
+                                    <div class="card-body text-light text-center fw-bold">
+                                        Cryptoverse
+                                    </div>
+
+                                    <div class="card-footer text-dark text-center">
+                                        <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank"
+                                            href="https://github.com/vix1209/cryptoverse"> <button
+                                                class="btn btn-outline-danger text-light rounded btn-sm">Github</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <a class="text-decoration-none" href="https://voyagrr.netlify.app" target="_blank">
+
+                                <div class="card bg-black">
+                                    <img class="img-fluid" src="./images/voyagrr.png" alt="">
+                                    <div class="card-body text-light text-center fw-bold">
+                                        The Voyager
+                                    </div>
+
+                                    <div class="card-footer text-dark text-center">
+                                        <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank"
+                                            href="https://github.com/vix1209/voyagrr"> <button
+                                                class="btn btn-outline-danger text-light rounded btn-sm">Github</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <a class="text-decoration-none" href="https://archinterior.netlify.app" target="_blank">
+
+                                <div class="card bg-black">
+                                    <img class="img-fluid" src="./images/archinterior.png" alt="">
+                                    <div class="card-body text-light text-center fw-bold">
+                                        Architecture/Interior Design Portfolio
+                                    </div>
+
+                                    <div class="card-footer text-dark text-center">
+                                        <a class="fw-bold text-decoration-none d-grid mt-2" target="_blank"
+                                            href="https://github.com/vix1209/archinterior"> <button
+                                                class="btn btn-outline-danger text-light rounded btn-sm">Github</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    <footer id="page-footer1" class="m-0 position-fixed">
+        <div id="page-footer" class="container text-center py-2 text-white ">
+            Vixpression Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>
         </div>
-        <footer id="page-footer1" class="m-0 position-fixed">
-            <div id="page-footer" class="container text-center py-2 text-white ">
-                Vixpression Copyright &copy; <script>document.write(new Date().getFullYear())</script> 
-            </div>
-        </footer>
-        <footer id="page-footer2" class="m-0 position-fixed">
-            <div id="page-footer" class="container py-2 text-center text-white ">
-                <ul id="page-footer-links">
-                    <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img src="./images/linkedin-brands.svg" alt=""></a></li>
-                    <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img src="./images/twitter-brands.svg" alt=""></a></li>
-                    <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg" alt=""></a></li>
-                    <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
-                    <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
-                </ul>
-            </div>
-        </footer>   
+    </footer>
+    <footer id="page-footer2" class="m-0 position-fixed">
+        <div id="page-footer" class="container py-2 text-center text-white ">
+            <ul id="page-footer-links">
+                <li><a href="https://www.linkedin.com/in/uchenna-ofor-0a8591169" target="_blank"><img
+                            src="./images/linkedin-brands.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/OforUchenna?s=09" target="_blank"><img
+                            src="./images/twitter-brands.svg" alt=""></a></li>
+                <li><a href="https://wa.me/+2348100608127" target="_blank"><img src="./images/whatsapp-brands.svg"
+                            alt=""></a></li>
+                <li><a href="https://github.com/vix1209" target="_blank"><img src="./images/github.svg" alt=""></a></li>
+                <li><a href="mailto:ucheofor2015@gmail.com"><img src="./images/email-svgrepo-com.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script></html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</html>

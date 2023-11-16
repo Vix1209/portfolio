@@ -72,7 +72,27 @@ footer{
     width: 55px;
     
 }
+
+#logo-div{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+#logo-div ul{
+    margin: 0;
+    padding: 0;
+}
  
+#contact{
+    padding-top: 20px;
+    padding: 0;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+
+    
+}
 #image{
     width: 100%;
     height: auto;
@@ -312,10 +332,15 @@ main{
     margin:30px;
 }
 
+#project-btn{
+    color: #791c25;
+}
+
 #my-projects .card:hover{
     transform:scale(1.08);
-    transition: 0.5s ease-in-out;
+    transition:  cubic-bezier(1, 0, 0, 1);
 }
+
 @media (min-width:1198px){
     #page-about{
         background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./images/aboutmelandscape.jpg);
@@ -330,6 +355,9 @@ main{
 
     #logo-div{
         width: 70%;
+    }
+    #contact{
+        display: none;
     }
     #writeup{
         width: 100%;
@@ -439,7 +467,7 @@ main{
         background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url(./images/background.jpg);
         background-repeat: no-repeat;
         background-size: cover ;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
 
     }
 
