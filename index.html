@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/vixnew.jpg" />
-    <meta name="description" content="Software Developer" />
+    <meta name="description" content="Web developer & Data scientist" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Vix Portfolio</title>
+    <title>Vixpression</title>
 </head>
 
 <body class="bg-black d-flex">
@@ -34,12 +34,12 @@
 
             <ul id="canvas-content" class="d-block px-3">
 
-                <li class="my-5 " id="cont-home" data-bs-dismiss="offcanvas">
+                <!-- <li class="my-5 " id="cont-home" data-bs-dismiss="offcanvas">
                     <a href="#home">
                         <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">HOME</div>
                     </a>
                 </li>
-                <hr class="text-white mx-5">
+                <hr class="text-white mx-5"> -->
                 <li class="my-5 " id="about" data-bs-dismiss="offcanvas">
                     <a href="#first-hr">
                         <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">ABOUT</div>
@@ -48,6 +48,12 @@
                 <hr class="text-white mx-5">
                 <li class="my-5 " id="portfolio" data-bs-dismiss="offcanvas">
                     <a href="#second-hr">
+                        <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">ACHIEVEMENTS</div>
+                    </a>
+                </li>
+                <hr class="text-white mx-5">
+                <li class="my-5 " id="portfolio" data-bs-dismiss="offcanvas">
+                    <a href="#third-hr">
                         <div class="btn btn-secondary border border-white rounded-pill px-4 py-3">PROJECTS</div>
                     </a>
                 </li>
@@ -84,9 +90,7 @@
     </div>
     <!-- contact link offcanvas ends -->
 
-
     <div class="p-0 m-0 container-fluid">
-
         <!-- navbar  -->
         <header class="container-fluid position-fixed">
 
@@ -206,44 +210,56 @@
             <div id="volunteering">
                 <div>
                     <h3 class="text-center text-danger mb-4 display-4 py-2">
-                        Social Gatherings
+                        Networking
                     </h3>
+
+
                     <div id="volunteering-row" class=" mb-3 ">
                         <div id="volunteering-col1">
 
                             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="5000">
-                                        <img src="/images/uche.JPG" class="d-block w-100" alt="uche1">
+                                <div class="container p-5">
+                                    <div class="carousel-inner" id="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="3000">
+                                            <img src="/images/uche.JPG" class="d-block w-100" width="50%" height="auto"
+                                                alt="uche1">
+                                        </div>
+
+                                        <!-- <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="" class="d-block w-50" alt="uche2">
+                                            </div>
+        
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="" class="d-block w-50" alt="uche2">
+                                            </div> -->
+
+                                        <div class="carousel-item" data-bs-interval="3000">
+                                            <img src="/images/uchesmfest.JPG" class="d-block w-100" alt="uche2">
+                                        </div>
+
+                                        <div class="carousel-item" data-bs-interval="3000">
+                                            <img src="/images/utf.jpg" class="d-block w-100" alt="...">
+                                        </div>
                                     </div>
-                                    <!-- <div class="carousel-item" data-bs-interval="5000">
-                                        <img src="/images/uche2.JPG" class="d-block w-100" alt="uche2">
-                                    </div> -->
-                                    <!-- <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                  </div> -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
                             </div>
 
                         </div>
-                        <!-- <div id="volunteering-col2">
 
-                            <p class="text-white mx-4">
-                             .
-
-                            </p>
-                        </div> -->
                     </div>
+
+
+
                 </div>
 
             </div>
@@ -383,7 +399,6 @@
             <script>document.write(new Date().getFullYear())</script>
         </div>
     </footer>
-
     <footer id="page-footer2" class="m-0 position-fixed">
         <div id="page-footer" class="container py-2 text-center text-white ">
             <ul id="page-footer-links">
