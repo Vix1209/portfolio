@@ -520,7 +520,7 @@ main{
 
 
     #page-about{
-        min-height: 1000px;
+        min-height: 1200px;
         position: relative;
         background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url(./images/ttt.jpg);
         background-repeat: no-repeat;
@@ -535,6 +535,7 @@ main{
     
     #page-about h3{
         overflow-y: hidden;
+        /* margin-bottom: -20px; */
     }
     
     #about-row{
